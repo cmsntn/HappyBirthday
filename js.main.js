@@ -19,7 +19,7 @@ function(isConfirm){
  
 
 swal({  
- title: "Bạn có phải là TN ? ", 
+ title: "Bạn có phải là Nguyệt ? ", 
   text: "Nhập mã xác nhận ",  
  type: "input",  
  showCancelButton: true,  
@@ -29,7 +29,7 @@ animation: "slide-from-top",
  inputPlaceholder: "Mã xác nhận là gì ?" },
  function(inputValue){   
 if (inputValue === false) return false;   
-   if (inputValue !== "yeuhs") {   
+   if (inputValue !== "aibiet") {   
   swal.showInputError("Nhập sai rồi kìa :v ");   
   return false   }   
  
@@ -38,19 +38,19 @@ setTimeout(function(){
 
 swal({  
  title: "Nhập tên món quà nào đó ", 
-  text: "N muốn nhận quà gì nào ? ",  
+  text: "Nguyệt muốn nhận quà gì nào ^^ ? ",  
  type: "input",  
  showCancelButton: true,  
  closeOnConfirm: false,   
 animation: "slide-from-top",  
 
- inputPlaceholder: "Nhập vào là có luôn :> " },
+ inputPlaceholder: "Nhập vào là có luôn ^^ " },
  function(inputValue){   
 if (inputValue === false) return false;   
    if (inputValue === "") {   
   swal.showInputError("Không thể để trống được ");   
   return false   }  
- swal("Hihi đùa đấy", "Món quà : " + inputValue + " phải inb cho mình mới biết được chứ mình không biết bạn nhập gì đâu :)   ", "success"); });
+ swal("OK", "Món quà " + inputValue + " sẽ được tặng cho bạn vào... năm sau :v   ", "success"); });
 
 
 },3000);
